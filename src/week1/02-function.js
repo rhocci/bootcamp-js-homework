@@ -9,8 +9,8 @@ function greetUser(username) {
 
 // 2. 원가 계산
 const calculateOriginalPrice = function (priceWithTax) {
-  let taxRate = 3.3;
-  return priceWithTax / (1 + taxRate / 100);
+  const TAX_RATE = 3.3;
+  return priceWithTax / (1 + TAX_RATE / 100);
 }
 
 // 3. 주류 판매 가능 여부
@@ -29,9 +29,9 @@ function getDiscountedPrice(originalPrice, discountPercent) {
 // 5. 등급 판단
 function gradeReport (score) {
   let grade, description;
-  const range = Math.floor(score / 10);
+  const RANGE = Math.floor(score / 10);
 
-  switch (range) {
+  switch (RANGE) {
     case 10:
     case 9:
       grade = 'A';

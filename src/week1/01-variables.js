@@ -18,7 +18,7 @@ let userAge = 25;
 let productPrice = 39_900;
 
 // 6. 웹 페이지의 "배경색"을 담는 상수를 작성하고 적절한 값을 할당하세요.
-const backgroundColor = '#FFFFFF';
+const BACKGROUND_COLOR = '#FFFFFF';
 
 // 7. 사용자가 작성한 "댓글 수(예: 12)"를 담는 변수를 선언하고 값을 할당하세요.
 let commentCount = 12;

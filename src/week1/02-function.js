@@ -9,7 +9,8 @@ function greetUser(username) {
 
 // 2. 원가 계산
 const calculateOriginalPrice = function (priceWithTax) {
-  return priceWithTax / 1.033;
+  let taxRate = 3.3;
+  return priceWithTax / (1 + taxRate / 100);
 }
 
 // 3. 주류 판매 가능 여부
@@ -22,7 +23,7 @@ const canSellAlcohol = (registrationCard) => {
 
 // 4. 할인가 계산
 function getDiscountedPrice(originalPrice, discountPercent) {
-  return originalPrice * (100 - discountPercent) * 0.01;
+  return originalPrice * (100 - discountPercent) / 100;
 }
 
 // 5. 등급 판단

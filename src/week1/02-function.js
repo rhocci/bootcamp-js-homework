@@ -18,7 +18,9 @@ let name = '문서영', age = 25, gender = 'female';
 let registrationCard = {name, age, gender};
 
 const canSellAlcohol = (registrationCard) => {
-  return registrationCard.age >= 19;
+  return registrationCard.age 
+    ? registrationCard.age >= 19
+    : alert('나이를 찾을 수 없습니다.');
 }
 
 // 4. 할인가 계산

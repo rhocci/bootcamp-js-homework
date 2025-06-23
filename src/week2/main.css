@@ -26,7 +26,7 @@ button {
   padding: 1rem;
   width: 375px;
   height: 812px;
-  overflow: hidden;
+  overflow-y: auto;
   box-shadow: 0 4px 20px #00000016;
   border: 1px solid #00000010;
   border-radius: .75rem;

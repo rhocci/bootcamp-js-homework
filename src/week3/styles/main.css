@@ -1,0 +1,238 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 2560px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: url('../assets/images/back2.webp');
+  background-position: center;
+  overflow: hidden;
+}
+
+.logo {
+  position: fixed;
+  left: 2rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .carousel__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+    .btn__icon {
+      position: relative;
+      width: 24px;
+      aspect-ratio: 1;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .carousel__btn--prev {
+    left: -100px;
+  }
+
+  .carousel__btn--next {
+    right: -100px;
+  }
+
+  .carousel__showcase {
+    display: flex;
+    max-width: 1340px;
+    overflow: hidden;
+  }
+
+  .carousel__list {
+    display: flex;
+    perspective: 1000px;
+    transform: translateX(-566px);
+    transition: transform 0.8s ease;
+  }
+}
+
+.card {
+  position: relative;
+  width: 494px;
+  height: 841px;
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+  transform: translate3d(0, 0, -100px);
+  transition: all 0.3s ease;
+
+  .card__image {
+    display: none;
+  }
+
+  .card__btn {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    padding-block: 1.4rem;
+    width: 92%;
+    color: #7e95ad;
+    background: #25394E;
+    border: 2px solid #ffffff20;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Electrical Safety', sans-serif;
+    font-size: 180%;
+    font-weight: 700;
+    pointer-events: none;
+
+    span {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.active {
+  z-index: 1;
+  scale: 1.1;
+  box-shadow: 0px 0px 50px #00000020;
+  
+  .card__image {
+    display: block;
+  }
+
+  .card__btn {
+    color: #fff;
+    pointer-events: auto;
+  }
+}
+
+.card1 {
+  background-image: url('../assets/images/card1.webp');
+
+  .card__image {
+    position: relative;
+    
+    img:nth-child(1) {
+      position: absolute;
+      left: -50%;
+      top: 300px;
+      animation: floatUpDown 2.5s .3s ease-in-out infinite;
+    }
+    
+    img:nth-child(2) {
+      position: absolute;
+      right: -20%;
+      top: 400px;
+      animation: floatUpDown 2.5s 0.6s ease-in-out infinite;
+    }
+  }
+  
+  &.active {
+    background-image: url('../assets/images/card1-active.webp');
+
+    .card__btn {
+      background: linear-gradient(#D1B080, #BF914E);
+    }
+  }
+}
+
+.card2 {
+  background-image: url('../assets/images/card2.webp');
+
+  .card__image {
+    position: absolute;
+    bottom: -40px;
+    scale: 0.85;
+    animation: floatUpDown 2.5s .3s ease-in-out infinite;
+  }
+
+  &.active {
+    background-image: url('../assets/images/card2-active.webp');
+
+    .card__btn {
+      background: linear-gradient(#EB5583, #E31957);
+    }
+  }
+}
+
+.card3 {
+  background-image: url('../assets/images/card3.webp');
+
+  .card__image {
+    
+    img:nth-child(1) {
+      position: absolute;
+      left: -22%;
+      bottom: 18%;
+      animation: floatUpDown 2.5s .5s ease-in-out infinite;
+    }
+    
+    img:nth-child(2) {
+      position: absolute;
+      top: 28%;
+      left: 0;
+      animation: floatUpDown 2.5s .3s ease-in-out infinite;
+    }
+    
+    img:nth-child(3) {
+      position: absolute;
+      top: 28%;
+      right: 0;
+      animation: floatUpDown 2.5s .3s ease-in-out infinite;
+    }
+
+    img:nth-child(4) {
+      position: absolute;
+      right: -22%;
+      bottom: 18%;
+      animation: floatUpDown 2.5s .5s ease-in-out infinite;
+    }
+  }
+
+  &.active {
+    background-image: url('../assets/images/card3-active.webp');
+
+    .card__btn {
+      background: linear-gradient(#68d48e, #29c25f);
+    }
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

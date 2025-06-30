@@ -19,6 +19,7 @@
   background: url('../assets/images/back2.webp');
   background-position: center;
   overflow: hidden;
+  transition: background-image 0.5s ease;
 }
 
 .logo {

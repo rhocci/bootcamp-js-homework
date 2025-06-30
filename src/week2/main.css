@@ -16,7 +16,9 @@ p {
 }
 
 button {
-  all: unset;
+  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -85,7 +87,7 @@ button {
       line-height: 1.5;
     }
 
-    .toggle {
+    .toggle img {
       transition: all 0.5s ease;
     }
 
@@ -95,11 +97,8 @@ button {
   }
 
   .card__bottom {
+    display: none;
     margin-top: 0.5rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 1s;
-
 
     p {
       font-weight: 400;
@@ -111,6 +110,6 @@ button {
   }
 
   .show-text {
-    max-height: 300px;
+    display: block;
   }
 }

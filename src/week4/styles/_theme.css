@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --red: rgba(179, 17, 22, 1);
+  --gray: rgba(162, 160, 160, 0.5);
+  --black: rgba(29, 19, 22, 1);
+  --orange: rgba(255, 96, 0, 1);
+  --yellow: rgba(255, 213, 40, 1);
+  --brown: rgba(184, 70, 1, 1);
+  --lightgreen: rgba(223, 232, 224, 1);
+  --lightbeige: rgba(233, 212, 180, 1);
+}

@@ -10,3 +10,4 @@
 | 2주차 | [아코디언 UI 과제](./md/week2.md)           |
 | 3주차 | [캐러셀 컴포넌트 구현 과제](./md/week3.md)           |
 | 4주차 | [애니메이션 구현 과제(미완)](./md/week4.md)           | 
+| 5주차 | [자유 구현(틱택토 게임)](https://alder-xylocarp-edb.notion.site/js-5-22e3aeb2031580f99590ec2d32d339bb?source=copy_link)           | 

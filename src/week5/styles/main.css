@@ -1,4 +1,2 @@
-@layer reset, index;
-
-@import "./_reset.css" layer(reset);
-@import "./_index.css" layer(index);
+@import "reset.css";
+@import "index.css";
